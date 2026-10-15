@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What If I Call? — Lyrics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="bg-blur"></div>
+  <div class="grain"></div>
+
+  <header class="topbar">
+    <div class="song-mini">
+      <div>
+        <div class="song-title">What If I Call?</div>
+        <div class="artist">Alex Crichton</div>
+      </div>
+    </div>
+    <button id="fullscreenBtn" class="icon-btn" title="Fullscreen">⛶</button>
+  </header>
+
+  <main>
+    <section id="lyricsStage" aria-live="polite"></section>
+  </main>
+
+  <div class="floating-notes" aria-hidden="true"></div>
+
+  <div id="startOverlay" class="start-overlay">
+    <button id="startBtn" class="start-btn">
+      <span class="play-symbol">▶</span>
+      <span>Tap to play</span>
+    </button>
+    <p>What If I Call?</p>
+  </div>
+
+  <footer class="controls">
+    <button id="restartBtn" class="control-btn">↻ Restart</button>
+    <button id="playPauseBtn" class="control-btn primary">▶ Play</button>
+    <div class="progress-wrap">
+      <div id="progress" class="progress"></div>
+    </div>
+    <span id="timeLabel" class="time">0:00</span>
+  </footer>
+
+  <audio id="audio" preload="auto">
+    <source src="what-if-i-call.m4a" type="audio/mp4">
+  </audio>
+
+  <script src="lyrics.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
